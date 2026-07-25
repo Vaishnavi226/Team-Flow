@@ -25,17 +25,27 @@
     header.sticky-header{position:sticky;top:0;z-index:40;width:100%;background-color:rgba(247,249,251,0.9);backdrop-filter:blur(12px)}
   </style>
 
-  <!-- High-Performance Preloaded Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <!-- Asynchronous Non-Blocking Google Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap">
+  </noscript>
 
-  <!-- Production Pre-compiled Minified Tailwind Engine CSS (Zero JS Runtime Overhead) -->
+  <!-- Asynchronous Non-Blocking Production Tailwind CSS Bundle -->
   <link rel="preload" as="style" href="/assets/css/tailwind.min.css">
-  <link rel="stylesheet" href="/assets/css/tailwind.min.css">
+  <link rel="stylesheet" href="/assets/css/tailwind.min.css" media="print" onload="this.media='all'">
 
-  <!-- Custom Kinetic Clarity CSS -->
+  <!-- Asynchronous Non-Blocking Custom Kinetic CSS -->
   <link rel="preload" as="style" href="/assets/css/styles.css">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="/assets/css/tailwind.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </noscript>
   
   <!-- Premium Squircle Stack Favicon -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
