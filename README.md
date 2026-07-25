@@ -2,7 +2,7 @@
 
 > Built for precision, speed, and transparency. Streamline your team's software development lifecycle with integrated tools for planning, building, and reporting.
 
-![TeamFlow Banner](assets/favicon.svg)
+
 
 ---
 
