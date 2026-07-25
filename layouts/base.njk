@@ -18,34 +18,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
 
-  <!-- Critical Above-The-Fold Inline Styles for Instant Paint -->
-  <style>
-    :root{--color-primary:#2563eb;--color-secondary:#0f172a;--color-background:#f7f9fb;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif}
-    html,body{margin:0;padding:0;font-family:var(--font-sans);background-color:#f7f9fb;color:#0f172a;-webkit-font-smoothing:antialiased;overflow-x:hidden;width:100%}
-    header.sticky-header{position:sticky;top:0;z-index:40;width:100%;background-color:rgba(247,249,251,0.9);backdrop-filter:blur(12px)}
-  </style>
+  <!-- Google Fonts & Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
-  <!-- Asynchronous Non-Blocking Google Fonts -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap">
-  </noscript>
+  <!-- Production Pre-compiled Minified Tailwind Engine CSS -->
+  <link rel="stylesheet" href="/assets/css/tailwind.min.css">
 
-  <!-- Asynchronous Non-Blocking Production Tailwind CSS Bundle -->
-  <link rel="preload" as="style" href="/assets/css/tailwind.min.css">
-  <link rel="stylesheet" href="/assets/css/tailwind.min.css" media="print" onload="this.media='all'">
-
-  <!-- Asynchronous Non-Blocking Custom Kinetic CSS -->
-  <link rel="preload" as="style" href="/assets/css/styles.css">
-  <link rel="stylesheet" href="/assets/css/styles.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="/assets/css/tailwind.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </noscript>
+  <!-- Custom Kinetic Clarity CSS -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
   
   <!-- Premium Squircle Stack Favicon -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">

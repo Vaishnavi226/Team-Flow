@@ -361,16 +361,16 @@ header.sticky-header.scrolled {
 
 .hero-horizon-arc {
   position: absolute;
-  bottom: -60px;
+  bottom: -280px;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
-  width: 150%;
+  width: 160%;
   max-width: 1800px;
-  height: 600px;
+  height: 520px;
   border-radius: 50% / 100% 100% 0 0;
-  background: radial-gradient(ellipse at 50% 10%, rgba(59, 130, 246, 0.25) 0%, rgba(37, 99, 235, 0.12) 45%, transparent 80%);
-  border-top: 3px solid rgba(96, 165, 250, 0.7);
-  box-shadow: 0 -30px 100px 20px rgba(59, 130, 246, 0.3);
+  background: radial-gradient(ellipse at 50% 10%, rgba(59, 130, 246, 0.18) 0%, rgba(37, 99, 235, 0.08) 50%, transparent 80%);
+  border-top: 1.5px solid rgba(96, 165, 250, 0.4);
+  box-shadow: 0 -20px 80px 10px rgba(59, 130, 246, 0.15);
   pointer-events: none;
   z-index: 1;
 }
