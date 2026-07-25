@@ -1,0 +1,145 @@
+---
+layout: base.njk
+title: Contact Us | TeamFlow
+description: Get in touch with TeamFlow's support, sales, and product team. We respond within 4 business hours.
+permalink: /contact/index.html
+---
+
+<section class="py-16 bg-gradient-to-b from-[#f7f9fb] to-white">
+  <div class="container mx-auto px-6 max-w-6xl">
+    
+    <!-- Hero Title -->
+    <div class="max-w-3xl mb-12 space-y-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold uppercase tracking-wider border border-blue-200/80">
+        GET IN TOUCH
+      </div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 tracking-tight">Let's connect.</h1>
+      <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+        Our team is dedicated to helping you scale your velocity. Whether you have questions about features, pricing, or enterprise custom solutions, we're here to help.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      
+      <!-- Interactive Form Column -->
+      <div class="lg:col-span-7 space-y-6">
+        
+        <div id="form-status" style="display: none;" aria-live="polite"></div>
+
+        <div class="card bg-white p-6 sm:p-8 border-slate-200 shadow-xl">
+          <form id="contact-form" class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label for="name" class="block text-sm font-semibold text-slate-700">Name <span class="text-red-500">*</span></label>
+                <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-slate-900 placeholder-slate-400 text-sm" placeholder="Jane Doe">
+              </div>
+
+              <div class="space-y-2">
+                <label for="email" class="block text-sm font-semibold text-slate-700">Email Address <span class="text-red-500">*</span></label>
+                <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-slate-900 placeholder-slate-400 text-sm" placeholder="jane@company.com">
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <label for="company" class="block text-sm font-semibold text-slate-700">Company</label>
+              <input type="text" id="company" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-slate-900 placeholder-slate-400 text-sm" placeholder="Acme Inc.">
+            </div>
+
+            <div class="space-y-2">
+              <label for="message" class="block text-sm font-semibold text-slate-700">Message <span class="text-red-500">*</span></label>
+              <textarea id="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-slate-900 placeholder-slate-400 text-sm" placeholder="How can we help your team ship faster?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-accent w-full text-base py-4 shadow-lg text-white font-bold">
+              Send Message
+              <span class="material-symbols-outlined text-xl">send</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Support Response Guarantee Banner -->
+        <div class="card bg-blue-50/70 border-blue-200 p-6 flex items-start gap-4 shadow-sm">
+          <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-xl">verified</span>
+          </div>
+          <div class="space-y-1">
+            <h3 class="font-bold text-slate-900 text-sm">Support Response Guarantee</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              We aim to respond to all inquiries within <strong class="text-slate-900">4 business hours</strong>. Enterprise customers with dedicated support channels can expect immediate assistance.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact Details & Location Column -->
+      <div class="lg:col-span-5 space-y-6">
+        
+        <!-- Location Card -->
+        <div class="card bg-white p-6 border-slate-200 shadow-md space-y-4">
+          <div class="h-44 bg-slate-900 rounded-xl overflow-hidden relative flex items-center justify-center text-white border border-slate-800">
+            <div class="text-center p-4">
+              <span class="material-symbols-outlined text-4xl text-blue-400 mb-2">location_on</span>
+              <h4 class="font-bold text-lg">TeamFlow SF HQ</h4>
+              <p class="text-xs text-slate-300">101 Innovation Way, San Francisco, CA</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-2">
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">HQ Office</h3>
+              <p class="text-xs text-slate-500">101 Innovation Way, San Francisco, CA</p>
+            </div>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-100 transition-colors" aria-label="Get Directions on Google Maps">
+              <span class="material-symbols-outlined text-xl">near_me</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Office Hours & Support Info -->
+        <div class="card bg-white p-6 border-slate-200 shadow-md space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center">
+              <span class="material-symbols-outlined">schedule</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-sm">Office Hours</h3>
+              <p class="text-xs text-slate-500">Mon – Fri: 9:00 AM – 5:00 PM PST</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 pt-3 border-t border-slate-100">
+            <div class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-sm">Email Us</h3>
+              <a href="mailto:hello@teamflow.io" class="text-xs text-blue-600 hover:underline">hello@teamflow.io</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Follow Social Channels -->
+        <div class="card bg-white p-6 border-slate-200 shadow-md space-y-3">
+          <h3 class="font-bold text-slate-900 text-sm">Follow the Velocity</h3>
+          <div class="flex items-center gap-3 pt-1">
+            <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all" aria-label="Website">
+              <span class="material-symbols-outlined text-xl">language</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all" aria-label="Chat">
+              <span class="material-symbols-outlined text-xl">chat</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all" aria-label="Community">
+              <span class="material-symbols-outlined text-xl">groups</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all" aria-label="Video">
+              <span class="material-symbols-outlined text-xl">movie</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

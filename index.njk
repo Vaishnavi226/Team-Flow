@@ -1,0 +1,938 @@
+---
+layout: base.njk
+title: TeamFlow | Project Management for High-Velocity Teams
+description: Streamline your entire software development lifecycle with integrated tools for planning, building, and reporting.
+permalink: /index.html
+---
+
+<!-- HERO SECTION - 21st.dev Light Mode Curved Arc & Geometric Grid Inspired Design -->
+<section class="relative pt-12 pb-10 md:pt-16 md:pb-12 overflow-hidden bg-gradient-to-b from-[#f7f9fb] via-white to-[#f7f9fb]">
+  
+  <!-- Subtle Geometric Grid Overlay Mask -->
+  <div class="absolute inset-0 hero-grid-bg pointer-events-none z-0"></div>
+
+  <!-- Ambient Light Orbs -->
+  <div class="glow-backdrop-blue top-10 left-1/2 -translate-x-1/2 opacity-75"></div>
+  <div class="glow-backdrop-green top-1/3 right-10 opacity-50"></div>
+
+  <!-- Curved Light Horizon Arc (Recreating 21st.dev Light Arc) -->
+  <div class="hero-horizon-arc"></div>
+
+  <div class="relative z-10 container mx-auto px-6 text-center max-w-5xl space-y-7 reveal active">
+    
+    <!-- Glassmorphism Announcement Badge -->
+    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/90 border border-blue-200/80 text-blue-700 text-xs font-semibold uppercase tracking-wider shadow-md hover:shadow-lg hover:border-blue-400 transition-all cursor-pointer backdrop-blur-md">
+      <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+      <span>NEW: KINETIC ROADMAP ENGINE 2.0</span>
+      <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </div>
+
+    <!-- Main Headline -->
+    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 tracking-tight leading-[1.1]">
+      Everything you need to ship <br class="hidden sm:inline"><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-600">high-quality products.</span>
+    </h1>
+
+    <!-- Subtitle Description -->
+    <p class="text-base sm:text-lg md:text-xl text-slate-700 max-w-2xl mx-auto font-normal leading-relaxed">
+      Streamline your online development lifecycle with integrated tools for planning, building, and reporting. One unified platform built for speed and clarity.
+    </p>
+
+    <!-- Primary & Secondary CTA Buttons -->
+    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="/pricing/" class="btn btn-primary text-base px-8 py-3.5 shadow-xl hover:shadow-2xl w-full sm:w-auto transform hover:-translate-y-0.5 transition-all">
+        Start Free Trial
+        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+      </a>
+      <a href="/product/" class="btn btn-outline text-base px-8 py-3.5 border-slate-300 bg-white/90 backdrop-blur-md hover:bg-slate-50 w-full sm:w-auto">
+        View Interactive Demo
+      </a>
+    </div>
+
+    <!-- Multi-Layered Floating Glass Dashboard Mockup (Enlarged Hero Centerpiece) -->
+    <div class="hero-dashboard-container">
+      
+      <!-- Floating Badge 1 (Top Left Overlap) -->
+      <div class="hero-floating-badge-left hidden xl:flex items-center gap-3 animate-float-slow">
+        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold shadow-sm">
+          <span class="material-symbols-outlined text-2xl">bolt</span>
+        </div>
+        <div class="text-left">
+          <p class="text-xs font-bold text-slate-900">Sprint Velocity</p>
+          <p class="text-xs font-bold text-emerald-600">+38% Output</p>
+        </div>
+      </div>
+
+      <!-- Floating Badge 2 (Bottom Right Overlap) -->
+      <div class="hero-floating-badge-right hidden xl:flex items-center gap-3 animate-float-reverse">
+        <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold shadow-sm">
+          <span class="material-symbols-outlined text-2xl">check_circle</span>
+        </div>
+        <div class="text-left">
+          <p class="text-xs font-bold text-slate-900">Deployment Success</p>
+          <p class="text-xs text-slate-600">v3.2 Production Live</p>
+        </div>
+      </div>
+
+      <!-- Main Central Dashboard Glass Card -->
+      <div class="rounded-[24px] border border-slate-200/90 bg-white/95 p-3.5 sm:p-5 shadow-[0_35px_90px_-15px_rgba(15,23,42,0.22)] overflow-hidden glass-card backdrop-blur-xl">
+        
+        <!-- Window Chrome Topbar -->
+        <div class="flex items-center justify-between px-4 py-2.5 border-b border-slate-100 bg-slate-50/90 rounded-t-2xl mb-4">
+          <div class="flex gap-2">
+            <span class="w-3.5 h-3.5 rounded-full bg-red-400"></span>
+            <span class="w-3.5 h-3.5 rounded-full bg-amber-400"></span>
+            <span class="w-3.5 h-3.5 rounded-full bg-emerald-400"></span>
+          </div>
+          <span class="text-xs text-slate-600 font-mono font-medium">app.teamflow.io/workspace/board</span>
+          <span class="text-xs font-bold text-emerald-600 flex items-center gap-1.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span> Live Sync
+          </span>
+        </div>
+        
+        <!-- Workspace Metrics Bar -->
+        <div class="bg-slate-950 rounded-xl p-4 sm:p-6 text-left text-white shadow-inner space-y-6">
+          
+          <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-800/80 text-xs">
+            <div class="flex items-center gap-4">
+              <span class="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full font-bold border border-blue-500/30">Sprint #42</span>
+              <span class="text-slate-300">Target Release: <strong>Friday, 5:00 PM</strong></span>
+            </div>
+            <div class="flex items-center gap-6 font-mono">
+              <span class="text-emerald-400 font-bold">87.5% Velocity</span>
+              <span class="text-blue-400 font-bold">142 PRs Merged</span>
+              <span class="text-purple-400 font-bold">2.4d Cycle Time</span>
+            </div>
+          </div>
+
+          <!-- Workspace Mockup Grid (Expanded Tall Layout) -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 min-h-[520px]">
+            
+            <!-- Column 1: In Progress -->
+            <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-800/80 space-y-4 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">In Progress</span>
+                  <span class="text-xs bg-slate-800 px-2.5 py-0.5 rounded-full text-slate-300 font-medium">4 tasks</span>
+                </div>
+                <div class="space-y-3">
+                  <div class="bg-slate-950/90 p-4 rounded-xl border border-slate-800/90 text-sm font-medium hover:border-blue-500 transition-colors shadow-sm">
+                    ⚡ Refactor Authentication Pipeline
+                    <div class="flex justify-between items-center mt-3 text-xs text-slate-300">
+                      <div class="flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Derek" class="w-5 h-5 rounded-full object-cover" loading="lazy" decoding="async" />
+                        <span>Sprint #42</span>
+                      </div>
+                      <span class="text-emerald-400 font-bold">98%</span>
+                    </div>
+                  </div>
+                  <div class="bg-slate-950/90 p-4 rounded-xl border border-slate-800/90 text-sm font-medium hover:border-blue-500 transition-colors shadow-sm">
+                    🎨 Design System Tokens Export
+                    <div class="flex justify-between items-center mt-3 text-xs text-slate-300">
+                      <div class="flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Sarah" class="w-5 h-5 rounded-full object-cover" loading="lazy" decoding="async" />
+                        <span>Design Ops</span>
+                      </div>
+                      <span class="text-amber-400 font-bold">Active</span>
+                    </div>
+                  </div>
+                  <div class="bg-slate-950/90 p-4 rounded-xl border border-slate-800/90 text-sm font-medium hover:border-blue-500 transition-colors shadow-sm">
+                    🔗 Real-time WebSocket Gateway
+                    <div class="flex justify-between items-center mt-3 text-xs text-slate-300">
+                      <div class="flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Michael" class="w-5 h-5 rounded-full object-cover" loading="lazy" decoding="async" />
+                        <span>Backend</span>
+                      </div>
+                      <span class="text-blue-400 font-bold">In Review</span>
+                    </div>
+                  </div>
+                  <div class="bg-slate-950/90 p-4 rounded-xl border border-slate-800/90 text-sm font-medium hover:border-blue-500 transition-colors shadow-sm">
+                    🔒 SOC2 Audit Logging Pipeline
+                    <div class="flex justify-between items-center mt-3 text-xs text-slate-300">
+                      <div class="flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="David" class="w-5 h-5 rounded-full object-cover" loading="lazy" decoding="async" />
+                        <span>Security</span>
+                      </div>
+                      <span class="text-blue-400 font-bold">Testing</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2: Completed Today -->
+            <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-800/80 space-y-4 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Completed Today</span>
+                  <span class="text-xs bg-slate-800 px-2.5 py-0.5 rounded-full text-slate-300 font-medium">12 tasks</span>
+                </div>
+                <div class="space-y-3">
+                  <div class="bg-slate-950/90 p-4 rounded-xl border border-slate-800/90 text-sm font-medium shadow-sm">
+                    🚀 Deploy API Gateway v3.2
+                    <div class="flex justify-between items-center mt-3 text-xs text-slate-300">
+                      <div class="flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena" class="w-5 h-5 rounded-full object-cover" loading="lazy" decoding="async" />
+                        <span>Production</span>
+                      </div>
+                      <span class="text-emerald-400 font-semibold">Done</span>
+                    </div>
+                  </div>
+                  <div class="bg-slate-950/90 p-4 rounded-xl border border-slate-800/90 text-sm font-medium shadow-sm">
+                    🌐 Multi-region Database Failover
+                    <div class="flex justify-between items-center mt-3 text-xs text-slate-300">
+                      <div class="flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80" alt="Priya" class="w-5 h-5 rounded-full object-cover" loading="lazy" decoding="async" />
+                        <span>Infra</span>
+                      </div>
+                      <span class="text-emerald-400 font-semibold">Done</span>
+                    </div>
+                  </div>
+                  <div class="bg-slate-950/90 p-4 rounded-xl border border-slate-800/90 text-sm font-medium shadow-sm">
+                    🎨 Design System Tokens v2.4
+                    <div class="flex justify-between items-center mt-3 text-xs text-slate-300">
+                      <div class="flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Sarah" class="w-5 h-5 rounded-full object-cover" loading="lazy" decoding="async" />
+                        <span>UI Ops</span>
+                      </div>
+                      <span class="text-emerald-400 font-semibold">Done</span>
+                    </div>
+                  </div>
+                  <div class="bg-slate-950/90 p-4 rounded-xl border border-slate-800/90 text-sm font-medium shadow-sm">
+                    ⚡ Stripe Webhook Handler Sync
+                    <div class="flex justify-between items-center mt-3 text-xs text-slate-300">
+                      <div class="flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Derek" class="w-5 h-5 rounded-full object-cover" loading="lazy" decoding="async" />
+                        <span>Billing</span>
+                      </div>
+                      <span class="text-emerald-400 font-semibold">Done</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 3: Release Velocity Matrix -->
+            <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-800/80 space-y-4 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Release Velocity</span>
+                  <span class="text-xs text-emerald-400 font-extrabold">+24.5%</span>
+                </div>
+                <div class="h-64 flex items-end justify-between gap-3 pt-8">
+                  <div class="w-full bg-blue-600/40 hover:bg-blue-600 rounded-lg h-[45%] transition-all" title="Week 1"></div>
+                  <div class="w-full bg-blue-600/60 hover:bg-blue-600 rounded-lg h-[68%] transition-all" title="Week 2"></div>
+                  <div class="w-full bg-blue-600/80 hover:bg-blue-600 rounded-lg h-[82%] transition-all" title="Week 3"></div>
+                  <div class="w-full bg-blue-500 hover:bg-blue-400 rounded-lg h-[100%] transition-all shadow-glow-blue" title="Week 4"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Workspace Status Toolbar -->
+          <div class="pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-300">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-emerald-400 text-sm">verified</span>
+              <span>Next Production Deployment scheduled in <strong>2h 15m</strong></span>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="text-slate-300 font-semibold">100% CI/CD Health</span>
+              <span>•</span>
+              <span class="text-slate-300 font-semibold">SOC2 Type II Certified</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PREMIUM CONTINUOUS INFINITE LOGO MARQUEE -->
+<section class="py-12 border-y border-slate-200/80 bg-white overflow-hidden" aria-label="Trusted Companies">
+  <div class="container mx-auto px-6 text-center space-y-4 mb-6">
+    <p class="text-xs font-bold text-slate-600 uppercase tracking-widest">Trusted by 10,000+ teams at top companies worldwide</p>
+  </div>
+
+  <!-- Logo Marquee Track Container -->
+  <div class="logo-marquee-container" tabindex="0" role="region" aria-label="Trusted companies logos marquee. Hover or focus to pause.">
+    <div class="logo-marquee-track">
+      
+      <!-- SET 1 (LOGOS 1-6) -->
+      <div class="logo-item" tabindex="0">
+        <span class="text-2xl sm:text-3xl font-black tracking-tighter text-slate-800">SLACK</span>
+      </div>
+      <div class="logo-item" tabindex="0">
+        <span class="text-2xl sm:text-3xl font-black tracking-tight text-slate-800">LINEAR</span>
+      </div>
+      <div class="logo-item" tabindex="0">
+        <span class="text-2xl sm:text-3xl font-black tracking-wider text-slate-800">VERCEL</span>
+      </div>
+      <div class="logo-item" tabindex="0">
+        <span class="text-2xl sm:text-3xl font-black tracking-tight text-slate-800">NOTION</span>
+      </div>
+      <div class="logo-item" tabindex="0">
+        <span class="text-2xl sm:text-3xl font-black tracking-tighter text-slate-800">STRIPE</span>
+      </div>
+      <div class="logo-item" tabindex="0">
+        <span class="text-2xl sm:text-3xl font-black tracking-tight text-slate-800">FIGMA</span>
+      </div>
+
+      <!-- SET 2 (DUPLICATED LOGOS 1-6 FOR SEAMLESS 100% INFINITE LOOP) -->
+      <div class="logo-item" aria-hidden="true">
+        <span class="text-2xl sm:text-3xl font-black tracking-tighter text-slate-800">SLACK</span>
+      </div>
+      <div class="logo-item" aria-hidden="true">
+        <span class="text-2xl sm:text-3xl font-black tracking-tight text-slate-800">LINEAR</span>
+      </div>
+      <div class="logo-item" aria-hidden="true">
+        <span class="text-2xl sm:text-3xl font-black tracking-wider text-slate-800">VERCEL</span>
+      </div>
+      <div class="logo-item" aria-hidden="true">
+        <span class="text-2xl sm:text-3xl font-black tracking-tight text-slate-800">NOTION</span>
+      </div>
+      <div class="logo-item" aria-hidden="true">
+        <span class="text-2xl sm:text-3xl font-black tracking-tighter text-slate-800">STRIPE</span>
+      </div>
+      <div class="logo-item" aria-hidden="true">
+        <span class="text-2xl sm:text-3xl font-black tracking-tight text-slate-800">FIGMA</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Feature Grid Section -->
+<section class="py-24 bg-[#f7f9fb] reveal">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+        Everything you need to ship
+      </h2>
+      <p class="text-base sm:text-lg text-slate-700">
+        Built for precision, speed, and transparency. Stop juggling disconnected tools and start building.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="card space-y-4">
+        <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+          <span class="material-symbols-outlined text-2xl">view_kanban</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Intuitive Boards</h3>
+        <p class="text-slate-700 text-sm leading-relaxed">
+          Drag, drop, and organize your sprint backlog effortlessly with zero-latency interactive board views.
+        </p>
+      </div>
+
+      <div class="card space-y-4">
+        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+          <span class="material-symbols-outlined text-2xl">trending_up</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Velocity Tracking</h3>
+        <p class="text-slate-700 text-sm leading-relaxed">
+          Measure your team's real-time output and predict target shipping dates with AI precision.
+        </p>
+      </div>
+
+      <div class="card space-y-4">
+        <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center">
+          <span class="material-symbols-outlined text-2xl">description</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Distributed Docs</h3>
+        <p class="text-slate-700 text-sm leading-relaxed">
+          Keep PRDs, meeting specs, and technical documents tightly linked where work actually happens.
+        </p>
+      </div>
+
+      <div class="card space-y-4">
+        <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
+          <span class="material-symbols-outlined text-2xl">forum</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Team Connect</h3>
+        <p class="text-slate-700 text-sm leading-relaxed">
+          Threaded PR comments and async standups ensure alignment across global timezones.
+        </p>
+      </div>
+
+      <div class="card space-y-4">
+        <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
+          <span class="material-symbols-outlined text-2xl">hub</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Auto Integrations</h3>
+        <p class="text-slate-700 text-sm leading-relaxed">
+          Connect GitHub, GitLab, Slack, and Figma to sync your codebase directly with tasks.
+        </p>
+      </div>
+
+      <div class="card space-y-4">
+        <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center">
+          <span class="material-symbols-outlined text-2xl">verified_user</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Enterprise Security</h3>
+        <p class="text-slate-700 text-sm leading-relaxed">
+          SOC2 Type II, GDPR, and granular role permissions keep your product data safe around the clock.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Dark Analytics Digest Section -->
+<section class="py-24 bg-slate-900 text-white overflow-hidden relative reveal">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <div class="space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+          Data & Analytics
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+          Data-driven decisions, delivered daily.
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+          Stop guessing where your bottlenecks are. TeamFlow's analytics engine provides zero-latency insights into sprint velocity, key milestones, and workload distribution.
+        </p>
+
+        <ul class="space-y-3.5 pt-2 text-slate-200 text-sm sm:text-base">
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-emerald-400 text-xl">check_circle</span>
+            Ready summary reports for leadership & stakeholders
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-emerald-400 text-xl">check_circle</span>
+            Real-time burndown and release forecast charts
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-emerald-400 text-xl">check_circle</span>
+            Predictive AI for release dates
+          </li>
+        </ul>
+      </div>
+
+      <!-- Live Graphic Preview Card -->
+      <div class="bg-slate-800/90 border border-slate-700/80 rounded-2xl p-6 shadow-2xl relative">
+        <div class="flex justify-between items-center pb-4 border-b border-slate-700">
+          <span class="text-sm font-semibold text-slate-200">Sprint Analytics Digest</span>
+          <span class="text-xs bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded-full font-mono">Live Sync</span>
+        </div>
+        <div class="pt-6 space-y-4">
+          <div class="flex justify-between text-xs text-slate-300">
+            <span>Overall Completion</span>
+            <span class="text-emerald-400 font-bold">87%</span>
+          </div>
+          <div class="w-full bg-slate-700 rounded-full h-3 overflow-hidden">
+            <div class="bg-emerald-500 h-full rounded-full w-[87%] transition-all duration-1000"></div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 pt-4">
+            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/60">
+              <span class="text-xs text-slate-300">Cycle Time</span>
+              <p class="text-xl sm:text-2xl font-bold text-white mt-1">2.4 Days</p>
+            </div>
+            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/60">
+              <span class="text-xs text-slate-300">Merged PRs</span>
+              <p class="text-xl sm:text-2xl font-bold text-blue-400 mt-1">142 PRs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- REDESIGNED CONNECTED PROCESS WORKFLOW SECTION -->
+<section class="py-32 bg-gradient-to-b from-white via-[#f7f9fb] to-white relative overflow-hidden reveal" aria-label="Onboarding Process">
+  
+  <!-- Subtle Ambient Radial Highlighting Background -->
+  <div class="glow-backdrop-blue top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-60"></div>
+  <div class="glow-backdrop-green bottom-10 right-10 opacity-50"></div>
+
+  <div class="container mx-auto px-6 max-w-6xl relative z-10">
+    
+    <!-- Section Heading & Animated Badge -->
+    <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold uppercase tracking-wider border border-blue-200/80 shadow-sm">
+        <span>⚡ SIMPLE ONBOARDING PROCESS</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+        Go from Zero to Ship <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">in days</span>
+      </h2>
+      <p class="text-base sm:text-lg text-slate-700 max-w-2xl mx-auto leading-relaxed">
+        A seamless 3-step workflow engineered to bring your entire team from initial setup to production releases without friction.
+      </p>
+    </div>
+
+    <!-- Connected Process Timeline -->
+    <div class="process-timeline-container">
+      
+      <!-- Gradient Connector Line (Desktop/Tablet) -->
+      <div class="process-connector-line"></div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch relative z-10">
+        
+        <!-- STEP 1 CARD -->
+        <div class="process-card group">
+          <div class="space-y-6">
+            <!-- Header Row: Icon & Step Number -->
+            <div class="flex items-center justify-between">
+              <div class="process-icon-box bg-blue-50 text-blue-600">
+                <span class="material-symbols-outlined text-2xl">link</span>
+              </div>
+              <span class="text-sm font-black text-blue-600 bg-blue-50 border border-blue-200/80 px-3 py-1 rounded-full font-mono">STEP 01</span>
+            </div>
+
+            <!-- Title & Description -->
+            <div class="space-y-2">
+              <h3 class="text-2xl font-extrabold text-slate-900">Connect</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">
+                Seamlessly sync your existing codebase, communication channels, and design tools in minutes.
+              </p>
+            </div>
+
+            <!-- Feature Chips -->
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="chip-tag">• GitHub</span>
+              <span class="chip-tag">• Slack</span>
+              <span class="chip-tag">• Figma</span>
+            </div>
+          </div>
+
+          <!-- Bottom Action Row with Sliding Arrow -->
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-700">
+            <span>Instant Integration</span>
+            <span class="material-symbols-outlined process-cta-arrow text-base text-slate-400 transition-transform">arrow_forward</span>
+          </div>
+        </div>
+
+        <!-- STEP 2 CARD -->
+        <div class="process-card group">
+          <div class="space-y-6">
+            <div class="flex items-center justify-between">
+              <div class="process-icon-box bg-emerald-50 text-emerald-600">
+                <span class="material-symbols-outlined text-2xl">groups</span>
+              </div>
+              <span class="text-sm font-black text-emerald-600 bg-emerald-50 border border-emerald-200/80 px-3 py-1 rounded-full font-mono">STEP 02</span>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-2xl font-extrabold text-slate-900">Collaborate</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">
+                Plan sprints, manage tasks, write specifications, and align your team in real-time.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="chip-tag">• Tasks</span>
+              <span class="chip-tag">• Docs</span>
+              <span class="chip-tag">• Sprints</span>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-700">
+            <span>Real-time Alignment</span>
+            <span class="material-symbols-outlined process-cta-arrow text-base text-slate-400 transition-transform">arrow_forward</span>
+          </div>
+        </div>
+
+        <!-- STEP 3 CARD -->
+        <div class="process-card group">
+          <div class="space-y-6">
+            <div class="flex items-center justify-between">
+              <div class="process-icon-box bg-purple-50 text-purple-600">
+                <span class="material-symbols-outlined text-2xl">rocket_launch</span>
+              </div>
+              <span class="text-sm font-black text-purple-600 bg-purple-50 border border-purple-200/80 px-3 py-1 rounded-full font-mono">STEP 03</span>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-2xl font-extrabold text-slate-900">Deploy</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">
+                Ship features automatically with continuous deployment triggers and live performance analytics.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="chip-tag">• CI/CD</span>
+              <span class="chip-tag">• Analytics</span>
+              <span class="chip-tag">• Reports</span>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-700">
+            <span>Continuous Release</span>
+            <span class="material-symbols-outlined process-cta-arrow text-base text-slate-400 transition-transform">arrow_forward</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PREMIUM INFINITE MARQUEE TESTIMONIALS SECTION -->
+<section class="py-24 bg-[#f7f9fb] reveal overflow-hidden" aria-label="Customer Testimonials">
+  <div class="container mx-auto px-6 max-w-6xl text-center mb-12 space-y-3">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold uppercase tracking-wider border border-blue-200/80">
+      LOVED BY ENGINEERING TEAMS
+    </div>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
+      Trusted by the world's most innovative teams
+    </h2>
+    <p class="text-base sm:text-lg text-slate-700 max-w-2xl mx-auto">
+      See how high-velocity product teams accelerate sprint delivery with TeamFlow.
+    </p>
+  </div>
+
+  <!-- Infinite Marquee Track Container -->
+  <div class="marquee-container" tabindex="0" role="region" aria-label="Infinite customer reviews marquee. Hover or focus to pause.">
+    <div class="marquee-track">
+      
+      <!-- SET 1 (CARDS 1-6) -->
+      <!-- CARD 1 -->
+      <div class="marquee-card">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-widest text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">ACME CORP</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “TeamFlow has completely changed how our engineering team operates. We've seen a 35% increase in sprint completion rates since switching.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Derek Jenkins" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Derek Jenkins</h3>
+            <p class="text-xs text-slate-600">VP of Engineering, Acme Corp</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="marquee-card">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-widest text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">STRATUM</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “Finally, a project management tool that doesn't feel like a chore. Fast, clean, keyboard-driven, and perfectly minimalist.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Sarah Chen" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Sarah Chen</h3>
+            <p class="text-xs text-slate-600">Head of Product Ops, Stratum</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="marquee-card">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-wider text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">VERCEL</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “The real-time roadmap synchronization and GitHub commit integration saved our remote team hundreds of hours during our Q3 launch.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Michael Vance" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Michael Vance</h3>
+            <p class="text-xs text-slate-600">Lead Architect, Vercel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="marquee-card">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-widest text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">LINEAR</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “The zero-latency UI performance is unmatched. Planning complex multi-sprint epics feels effortless and instantaneous.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Elena Rostova" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Elena Rostova</h3>
+            <p class="text-xs text-slate-600">Director of Product, Linear Systems</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="marquee-card">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-widest text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">PULSE</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “TeamFlow's automated reporting digest keeps our executive board updated without requiring manual slide deck assembly.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80" alt="David Miller" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">David Miller</h3>
+            <p class="text-xs text-slate-600">CTO, Pulse Analytics</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="marquee-card">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-widest text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">STRIPE</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “The developer ergonomics are incredible. Keyboard shortcuts for everything, integrated PR links, and crystal-clear velocity tracking.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80" alt="Priya Sharma" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Priya Sharma</h3>
+            <p class="text-xs text-slate-600">Lead Frontend Engineer, Stripe</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SET 2 (DUPLICATED CARDS 1-6 FOR SEAMLESS 100% INFINITE LOOP) -->
+      <!-- CARD 1 DUP -->
+      <div class="marquee-card" aria-hidden="true">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-widest text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">ACME CORP</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “TeamFlow has completely changed how our engineering team operates. We've seen a 35% increase in sprint completion rates since switching.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Derek Jenkins" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Derek Jenkins</h3>
+            <p class="text-xs text-slate-600">VP of Engineering, Acme Corp</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 DUP -->
+      <div class="marquee-card" aria-hidden="true">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-widest text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">STRATUM</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “Finally, a project management tool that doesn't feel like a chore. Fast, clean, keyboard-driven, and perfectly minimalist.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Sarah Chen" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Sarah Chen</h3>
+            <p class="text-xs text-slate-600">Head of Product Ops, Stratum</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 DUP -->
+      <div class="marquee-card" aria-hidden="true">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-wider text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">VERCEL</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “The real-time roadmap synchronization and GitHub commit integration saved our remote team hundreds of hours during our Q3 launch.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Michael Vance" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Michael Vance</h3>
+            <p class="text-xs text-slate-600">Lead Architect, Vercel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 DUP -->
+      <div class="marquee-card" aria-hidden="true">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-widest text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">LINEAR</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “The zero-latency UI performance is unmatched. Planning complex multi-sprint epics feels effortless and instantaneous.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Elena Rostova" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Elena Rostova</h3>
+            <p class="text-xs text-slate-600">Director of Product, Linear Systems</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 DUP -->
+      <div class="marquee-card" aria-hidden="true">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-widest text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">PULSE</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “TeamFlow's automated reporting digest keeps our executive board updated without requiring manual slide deck assembly.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80" alt="David Miller" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">David Miller</h3>
+            <p class="text-xs text-slate-600">CTO, Pulse Analytics</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 DUP -->
+      <div class="marquee-card" aria-hidden="true">
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm font-bold tracking-wider">
+              ★★★★★
+            </div>
+            <span class="text-[11px] font-extrabold tracking-widest text-slate-700 bg-slate-100 px-2.5 py-1 rounded-full">STRIPE</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed font-medium">
+            “The developer ergonomics are incredible. Keyboard shortcuts for everything, integrated PR links, and crystal-clear velocity tracking.”
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80" alt="Priya Sharma" class="w-10 h-10 rounded-full object-cover shadow-sm shrink-0 border border-slate-200" loading="lazy" decoding="async" />
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm">Priya Sharma</h3>
+            <p class="text-xs text-slate-600">Lead Frontend Engineer, Stripe</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Teaser Section -->
+<section class="py-24 bg-white reveal">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900">Simple, transparent pricing</h2>
+      <p class="text-slate-700 text-base sm:text-lg">Start free, scale as you grow.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+      
+      <!-- Starter Tier -->
+      <div class="card border-slate-200 flex flex-col justify-between space-y-6">
+        <div>
+          <h3 class="text-xl font-bold text-slate-900">Starter</h3>
+          <p class="text-xs text-slate-600 mt-1">For small teams getting started</p>
+          <div class="mt-6 flex items-baseline gap-1">
+            <span class="text-4xl font-extrabold text-slate-900">₹0</span>
+            <span class="text-slate-600 text-sm">/month</span>
+          </div>
+          <ul class="mt-6 space-y-3 text-sm text-slate-700">
+            <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-emerald-500 text-lg">check_circle</span> Up to 5 users</li>
+            <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-emerald-500 text-lg">check_circle</span> Basic Kanban boards</li>
+            <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-emerald-500 text-lg">check_circle</span> GitHub Integration</li>
+          </ul>
+        </div>
+        <a href="/pricing/" class="btn btn-outline w-full text-center">Get Started</a>
+      </div>
+
+      <!-- Pro Tier (Popular) -->
+      <div class="card border-blue-600 ring-2 ring-blue-600/30 shadow-xl flex flex-col justify-between space-y-6 relative bg-gradient-to-b from-white to-blue-50/20">
+        <span class="absolute -top-3 right-6 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">POPULAR</span>
+        <div>
+          <h3 class="text-xl font-bold text-slate-900">Pro</h3>
+          <p class="text-xs text-slate-600 mt-1">For fast-growing product teams</p>
+          <div class="mt-6 flex items-baseline gap-1">
+            <span class="text-4xl font-extrabold text-slate-900">₹12</span>
+            <span class="text-slate-600 text-sm">/user/mo</span>
+          </div>
+          <ul class="mt-6 space-y-3 text-sm text-slate-700">
+            <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-emerald-500 text-lg">check_circle</span> Unlimited users</li>
+            <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-emerald-500 text-lg">check_circle</span> Advanced Analytics</li>
+            <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-emerald-500 text-lg">check_circle</span> Priority Support</li>
+            <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-emerald-500 text-lg">check_circle</span> Custom Workflows</li>
+          </ul>
+        </div>
+        <a href="/pricing/" class="btn btn-primary w-full text-center">Start Free Trial</a>
+      </div>
+
+      <!-- Enterprise Tier -->
+      <div class="card border-slate-200 flex flex-col justify-between space-y-6">
+        <div>
+          <h3 class="text-xl font-bold text-slate-900">Enterprise</h3>
+          <p class="text-xs text-slate-600 mt-1">For large organizations</p>
+          <div class="mt-6 flex items-baseline gap-1">
+            <span class="text-3xl font-extrabold text-slate-900">Custom</span>
+          </div>
+          <ul class="mt-6 space-y-3 text-sm text-slate-700">
+            <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-emerald-500 text-lg">check_circle</span> SSO & SAML</li>
+            <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-emerald-500 text-lg">check_circle</span> Dedicated Success Manager</li>
+            <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-emerald-500 text-lg">check_circle</span> Custom Contracts</li>
+          </ul>
+        </div>
+        <a href="/contact/" class="btn btn-outline w-full text-center">Contact Sales</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Accordion -->
+{% include "faq_accordion.njk" %}
+
+<!-- Reusable CTA Banner -->
+{% include "cta_banner.njk" %}

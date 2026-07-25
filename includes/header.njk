@@ -1,0 +1,70 @@
+<header class="sticky-header sticky top-0 z-40 w-full bg-[#f7f9fb]/90 backdrop-blur-md border-b border-[#e2e8f0]/80">
+  <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+    
+    <!-- Brand Logo -->
+    <a href="/" class="flex items-center gap-3 group" aria-label="TeamFlow Home">
+      <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-md transition-transform group-hover:scale-105">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <span class="text-xl font-bold tracking-tight text-[#0f172a] group-hover:text-blue-600 transition-colors">TeamFlow</span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden md:flex items-center gap-8" aria-label="Main Navigation">
+      <a href="/" class="nav-link {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}" {% if page.url == '/' or page.url == '/index.html' %}aria-current="page"{% endif %}>Home</a>
+      <a href="/product/" class="nav-link {% if page.url and page.url.startsWith('/product') %}active{% endif %}" {% if page.url and page.url.startsWith('/product') %}aria-current="page"{% endif %}>Product</a>
+      <a href="/about/" class="nav-link {% if page.url and page.url.startsWith('/about') %}active{% endif %}" {% if page.url and page.url.startsWith('/about') %}aria-current="page"{% endif %}>About</a>
+      <a href="/pricing/" class="nav-link {% if page.url and page.url.startsWith('/pricing') %}active{% endif %}" {% if page.url and page.url.startsWith('/pricing') %}aria-current="page"{% endif %}>Pricing</a>
+      <a href="/contact/" class="nav-link {% if page.url and page.url.startsWith('/contact') %}active{% endif %}" {% if page.url and page.url.startsWith('/contact') %}aria-current="page"{% endif %}>Contact</a>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="hidden md:flex items-center gap-4">
+      <a href="/pricing/" class="btn btn-accent shadow-md hover:shadow-lg">Get Started</a>
+    </div>
+
+    <!-- Mobile Hamburger Toggle Button (44px+ WCAG Touch Target) -->
+    <button id="menu-toggle" class="md:hidden min-w-[44px] min-h-[44px] p-2.5 rounded-xl text-slate-700 hover:text-blue-600 hover:bg-slate-200/60 focus:outline-none focus:ring-2 focus:ring-blue-600 flex items-center justify-center transition-colors" aria-label="Open mobile menu" aria-expanded="false">
+      <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+  </div>
+
+  <!-- Full-Screen Safe-Area Accessible Mobile Navigation Overlay Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer md:hidden" aria-hidden="true">
+    <div class="mobile-drawer-content" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+      
+      <!-- Drawer Header Bar -->
+      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+        <a href="/" class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-md">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <span class="text-xl font-bold tracking-tight text-slate-900">TeamFlow</span>
+        </a>
+        <button id="mobile-drawer-close" class="min-w-[44px] min-h-[44px] p-2 rounded-xl text-slate-500 hover:text-slate-900 hover:bg-slate-100 flex items-center justify-center transition-colors" aria-label="Close mobile menu">
+          <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+      </div>
+
+      <!-- Drawer Nav Links (48px WCAG Touch Target Items) -->
+      <nav class="flex flex-col gap-2 py-6" aria-label="Mobile Navigation Links">
+        <a href="/" class="mobile-nav-link {% if page.url == '/' or page.url == '/index.html' %}text-blue-600 bg-blue-50/80 font-bold{% endif %}">Home</a>
+        <a href="/product/" class="mobile-nav-link {% if page.url and page.url.startsWith('/product') %}text-blue-600 bg-blue-50/80 font-bold{% endif %}">Product</a>
+        <a href="/about/" class="mobile-nav-link {% if page.url and page.url.startsWith('/about') %}text-blue-600 bg-blue-50/80 font-bold{% endif %}">About</a>
+        <a href="/pricing/" class="mobile-nav-link {% if page.url and page.url.startsWith('/pricing') %}text-blue-600 bg-blue-50/80 font-bold{% endif %}">Pricing</a>
+        <a href="/contact/" class="mobile-nav-link {% if page.url and page.url.startsWith('/contact') %}text-blue-600 bg-blue-50/80 font-bold{% endif %}">Contact</a>
+      </nav>
+
+      <!-- Drawer Footer Actions -->
+      <div class="mt-auto pt-6 border-t border-slate-100 space-y-3">
+        <a href="/pricing/" class="btn btn-accent w-full text-center py-3.5 shadow-md">Get Started</a>
+        <a href="/product/" class="btn btn-outline w-full text-center py-3 border-slate-200">Start Free Trial</a>
+      </div>
+
+    </div>
+  </div>
+</header>

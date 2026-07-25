@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>{{ title | default("TeamFlow | Project Management for High-Velocity Teams") }}</title>
+  <meta name="description" content="{{ description | default('Build for precision, speed, and transparency with TeamFlow. Streamline your team\'s workflow and ship faster.') }}">
+  
+  <!-- Open Graph / Social Card Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title | default('TeamFlow | Project Management for High-Velocity Teams') }}">
+  <meta property="og:description" content="{{ description | default('Build for precision, speed, and transparency with TeamFlow.') }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title | default('TeamFlow | Project Management for High-Velocity Teams') }}">
+
+  <!-- Resource Preconnects for High-Velocity Asset Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+
+  <!-- Critical Above-The-Fold Inline Styles for Instant Paint -->
+  <style>
+    :root{--color-primary:#2563eb;--color-secondary:#0f172a;--color-background:#f7f9fb;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif}
+    html,body{margin:0;padding:0;font-family:var(--font-sans);background-color:#f7f9fb;color:#0f172a;-webkit-font-smoothing:antialiased;overflow-x:hidden;width:100%}
+    header.sticky-header{position:sticky;top:0;z-index:40;width:100%;background-color:rgba(247,249,251,0.9);backdrop-filter:blur(12px)}
+  </style>
+
+  <!-- Google Fonts & Material Symbols (Clean Standard Loading) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Engine Engine -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#f7f9fb",
+            "background": "#f7f9fb",
+            "primary": "#2563eb",
+            "primary-hover": "#1d4ed8",
+            "secondary": "#0f172a",
+            "accent-green": "#22C55E",
+            "text-main": "#0F172A",
+            "border-subtle": "#E2E8F0"
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "-apple-system", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom Kinetic CSS -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  <!-- Premium Squircle Stack Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="shortcut icon" href="/assets/favicon.svg">
+
+  <!-- Schema.org JSON-LD Structured Data (Organization & SoftwareApplication) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://teamflow-demo.vercel.app/#organization",
+        "name": "TeamFlow",
+        "url": "https://teamflow-demo.vercel.app/",
+        "logo": "https://teamflow-demo.vercel.app/assets/favicon.svg",
+        "sameAs": [
+          "https://digitalheroesco.com/"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://teamflow-demo.vercel.app/#software",
+        "name": "TeamFlow Platform",
+        "operatingSystem": "Web",
+        "applicationCategory": "BusinessApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "12.00",
+          "priceCurrency": "USD"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-[#f7f9fb] text-[#0f172a] font-sans antialiased flex flex-col min-h-screen">
+  
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Skip to main content</a>
+
+  {% include "header.njk" %}
+
+  <main id="main-content" class="flex-grow">
+    {{ content | safe }}
+  </main>
+
+  {% include "footer.njk" %}
+
+  <!-- Main Interactivity Bundle -->
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
